@@ -107,10 +107,12 @@ let questions = [
         document.getElementById('retry').style.display = 'block';
       } else {
         resultDiv.innerHTML = `Wrong! You have ${lives} ${lives === 1 ? 'life' : 'lives'} left.`;
+        resultDiv.style.color = 'red'; // Set the text color to red
   
         setTimeout(() => {
           resultDiv.innerHTML = '';
           displayQuestion();
+          resultDiv.style.color = ''; // Reset the text color
         }, 2000);
       }
     }
@@ -119,6 +121,7 @@ let questions = [
       document.getElementById(`choice${i + 1}`).disabled = true;
     }
   }
+  
   
   function displayQuestion() {
     let h2 = document.getElementById("question");
