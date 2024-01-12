@@ -1,4 +1,4 @@
-body {
+html, body {
   background-color: #151414;
   font-family: 'Arial', sans-serif;
   text-align: center;
@@ -7,6 +7,7 @@ body {
   background-repeat: no-repeat;
   margin: 0;
   padding: 0;
+  height: 100%; /* Set the height to 100% for full-screen background */
 }
 
 .container {
@@ -63,7 +64,7 @@ button:hover {
 /* Media queries for responsiveness on smaller screens */
 @media screen and (max-width: 600px) {
   .container {
-      margin: 20px;
-      max-width: none;
+    margin: 20px;
+    max-width: none;
   }
 }
