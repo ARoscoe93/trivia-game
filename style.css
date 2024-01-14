@@ -1,13 +1,16 @@
-html, body {
+html body {
   background-color: #151414;
   font-family: 'Arial', sans-serif;
   text-align: center;
   background-image: url('images/background.jpg'); 
-  background-size: cover;
+  background-size: fit;
   background-repeat: no-repeat;
   margin: 0;
   padding: 0;
   height: 100%; /* Set the height to 100% for full-screen background */
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
 }
 
 .container {
@@ -17,6 +20,9 @@ html, body {
   max-width: 600px;
   margin: 50px auto;
   padding: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
 }
 
 h1 {
@@ -66,5 +72,6 @@ button:hover {
   .container {
     margin: 20px;
     max-width: none;
+    margin-top: 100px;
   }
 }
