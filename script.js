@@ -53,7 +53,7 @@ let questions = [
     "Earth", "Christopher Nolan", "299,792 kilometers per second"
   ];
   
-  document.getElementById('retry').innerText = 'Try Again';
+  document.getElementById('retry').innerText = 'Randomize';
   
   function resetGame() {
     document.getElementById("result").innerHTML = '';
