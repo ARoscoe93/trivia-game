@@ -89,6 +89,7 @@ let questions = [
   
     if (button.textContent === correctAnswer[currentQuestionIndex]) {
       resultDiv.innerHTML = "Correct!";
+      resultDiv.style.color = 'green';
   
       if (currentQuestionIndex < questions.length - 1) {
         currentQuestionIndex++;
@@ -104,6 +105,7 @@ let questions = [
   
       if (lives <= 0) {
         resultDiv.innerHTML = "Wrong! Game over!";
+        resultDiv.style.color = 'red';
         document.getElementById('retry').style.display = 'block';
       } else {
         resultDiv.innerHTML = `Wrong! You have ${lives} ${lives === 1 ? 'life' : 'lives'} left.`;
