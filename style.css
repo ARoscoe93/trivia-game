@@ -42,3 +42,7 @@ button:hover {
 h1 {
   text-decoration: underline;
 }
+
+#retry {
+  background-color: rgb(252, 88, 88);
+}
